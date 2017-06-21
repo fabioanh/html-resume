@@ -61,7 +61,7 @@ li{
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
   height: 100%;
-  padding: 0.6in var(--sidebar-horizontal-padding);
+  padding: 0.4in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
   font-size: 8.5pt;
 }
@@ -75,9 +75,11 @@ li{
 
 #title{
   position: relative;
-  left: 0.55in;
+  left: 0.5in;
+  margin-right: 0.5in;
   margin-bottom: 0.3in;
   line-height: 1.2;
+  text-align:justify;
 }
 
 #title h1{
@@ -93,6 +95,10 @@ li{
 
 .subtitle{
   font-size: 8pt;
+}
+
+.description{
+  /*text-transform: none;*/
 }
 
 /*** categorial blocks ***/
@@ -227,6 +233,11 @@ li{
   margin-bottom: 0.25in;
 }
 
+.unlink{
+  color: inherit;
+  text-decoration: none;
+}
+
 /***** fine-tunes on the details block where the real juice is *****/
 
 .details{
@@ -320,17 +331,17 @@ li{
 
 #sidebar h1{
   font-weight: 400;
-  font-size: 11pt;
+  font-size: 10pt;
 }
 
 #sidebar h2{
   font-weight: 400;
-  font-size: 10pt;
+  font-size: 9pt;
   margin-left: 0.03in;
 }
 
 .side-block{
-  margin-top: 0.5in;
+  margin-top: 0.12in;
 }
 
 #contact ul{
@@ -346,35 +357,17 @@ li{
   text-align: right;
 }
 
-#skills{
+.skills{
   line-height: 1.5;
 }
 
-#skills ul{
+.skills ul{
   margin-top: 0.02in;
   margin-left: 0.04in;
   padding: 0;
 }
 
-#skills > ul > li{
+.nested-skills > ul > li{
   margin-top: 0.05in;
   padding: 0;
-}
-
-#disclaimer{
-  position: absolute;
-  bottom: var(--sidebar-horizontal-padding);
-  right: var(--sidebar-horizontal-padding);
-  font-size: 7.5pt;
-  font-style: italic;
-  line-height: 1.1;
-  text-align: right;
-  color: #777;
-}
-
-#disclaimer code{
-  color: #666;
-  font-family: "Source Code Pro";
-  font-weight: 400;
-  font-style: normal;
 }
